@@ -1,0 +1,20 @@
+/* FooterStyles.module.css */
+
+.container {
+  text-align: center;
+}
+
+.container p {
+  font-size: 16px;
+  color: var(--footer-text-color);
+}
+
+.container a {
+  color: var(--footer-link-color);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.container a:hover {
+  color: var(--footer-link-hover-color);
+}

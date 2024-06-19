@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  height: 100vh;
+  min-height: 500px;
+}
+
+.hero {
+  border-radius: 50%;
+  width: 150px; /* Adjusted size */
+  height: 150px; /* Ensure height and width are equal for a perfect circle */
+  object-fit: cover; /* Optional */
+}
+
+.colorModeContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colorMode {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  top: 10px; /* Adjust as needed */
+}
+
+.colorMode:hover {
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: -10px; /* Adjust margin as needed */
+}
+
+.iconContainer a {
+  margin: 0;
+}
+
+.iconContainer img {
+  width: 20px;
+}
+
+.description {
+  max-width: 24ch;
+}
+
+a {
+  width: fit-content;
+  align-self: center;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile Responsiveness Adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero{
+    width: 200px; /* Adjust size for better fit */
+    height: 200px;
+    
+  }
+  
+
+  .colorMode {
+    top: 5px; /* Adjust for better spacing */
+    right: 5px;
+  }
+
+  .info h1 {
+    font-size: 24px;
+  }
+
+  .info h2 {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 14px;
+    max-width: 20ch; /* Adjust for better readability */
+  }
+
+  .iconContainer {
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container .hero {
+    max-width: 350px;
+    width: 350px;
+    height: 350px;
+  }
+}
