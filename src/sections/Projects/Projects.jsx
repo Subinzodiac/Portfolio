@@ -11,7 +11,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={ecommerce}
-          link="https://github.com/Subinzodiac/Ecommerce-Mern.git"
+          link="https://github.com/Subinzodiac/E-commerce-Application"
           h3="Ecommerce"
           p="Ecommerce Application "
         />
